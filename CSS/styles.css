@@ -1,0 +1,211 @@
+:root {
+    --primary-color: #800080;
+    --secondary-color: rgba(247, 202, 247, 0.2);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+body {
+    font-family: 'EB Garamond', serif;
+    background-color: var(--secondary-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS for the header*/
+header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #800080;
+}
+
+header #logo img {
+    height: 100px;
+}
+
+/* CSS for the (A) WRAPPER on the navbar*/
+#ham-nav {
+    width: 100%;
+}
+
+#ham-items a,
+#socials ul li a,
+.display-col {
+    color: var(--primary-color);
+}
+
+#ham-items a:hover {   
+    text-decoration:underline;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#ham-items {
+    display: flex;
+    justify-content: center;
+}
+
+#ham-items a {
+    padding-right: 20px;
+}
+
+/* (C) HIDE HAMBURGER ON MAIN SCREEN*/
+#ham-nav label, #hamburger {
+    display: none;
+}
+
+#socials ul {
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+}
+
+#appointment {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+select, input {
+    background: var(--secondary-color);
+    background-image: none;
+    width: 20%;
+    height: 30px;
+    color: var(--primary-color);
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;     
+}
+
+.submit-btn {
+    background: var(--primary-color);
+    color: #ffffff;
+    height: 50px;
+    width: 15%;
+    border: none;
+}
+
+.submit-btn:hover {
+    border: 3px solid #000000;
+}
+
+/* .card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: contain;
+} */
+
+/* .col-text .col-img {
+    object-fit: contain;
+    height: 40vh;
+} */
+
+.col-text {
+    text-align: center;
+}
+
+.col-text h5, .fa, .btn {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#qualities .col-text:hover {
+    transform: translateY(-25px);
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+.my-specialty  .specialty-img {
+    width:100%;
+    height: 40vh;
+    object-fit:cover;
+}
+
+.my-specialty {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: 5px solid var(--primary-color);
+}
+
+.specialty-title {
+    color: var(--primary-color);
+    font: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Queries*/
+
+@media screen and (max-width:768px) {
+    /*(A) BREAK INTO A VERTICAL MENU. Thois transforms the horizaontal menu into a vertical one */
+    #ham-items a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+     /* (B) SHOW HAMBURGER ICON. NB: the label shows, only the checkbox remains hidden*/
+  #ham-nav label { 
+    display: inline-block; 
+    color: white;
+    background: var(--primary-color);
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 5px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #ham-items { 
+      display: none; 
+    } /* This hides the menu items by default*/
+
+  #ham-nav input:checked ~ #ham-items {
+       display: block; 
+    } /*When the checkbox is ticked, show the menu items*/
+
+    #appointment p {
+        font-weight: bolder;
+        font-size:large;
+    }
+    
+   select, input {
+    width: 100%;
+    }
+
+    .submit-btn {
+        width:100%;
+        margin-top: 20px;
+    }
+
+    .col-text {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+
+
+   
+
+    
+
+
+
+
+
+
+}

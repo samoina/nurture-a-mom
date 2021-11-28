@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurture A Mom</title>
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Own style sheet-->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <!--(A) MENU WRAPPER-->
+        <nav id="ham-nav" class="mt-5">
+            <!--(B) THE HAMBURGER, the type checkbox is used for the hamburger button, and the &#9776 is the HTML symbol for the 3 lines hamburger item -->
+            <label for="hamburger">&#9776</label>
+            <input type="checkbox" name="" id="hamburger">
+            <!--(C) MENU ITEMS-->
+            <div id="ham-items">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+                <a href="blog.html">BLOG</a>
+            </div>
+        </nav>
+
+        <div id="socials" class="mt-5">
+            <ul>
+                <li class="mr-3"><a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="mr-3"><a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="display">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5" id="display-text">
+                    <h1>Personalized maternal & child service at your doorstep.<br>Do not walk this journey alone.</h1>
+                    <p>Tunza Mama caregivers provide you and your toto quality care, all from the comfort of your home
+                        or
+                        office.</p>
+                    <h4 class="display-col"><i class="fas fa-play-circle"></i>Watch this video about Nurture-A-Mom.</h4>
+                </div>
+                <div class="col-md-6" id="dispay-pic">
+                    <img class="img-fluid" src="./images/display-pic.jpg" alt="Nurse at work">
+                </div>
+            </div>
+            <div id="appointment">
+                <p>Book an appointment with a caregiver now.</p>
+                <form>
+                    <label for="appt-date">Date:</label>
+                    <input type="date" id="appt-date" name="appt-date" class="mr-1 font-weight-bold">
+                    <label for="location">Location:</label>
+                    <select name="location" id="locations" class="mr-1 font-weight-bold">
+                        <option value="Nairobi County">Nairobi County</option>
+                        <option value="Kiambu County">Kiambu County</option>
+                        <option value="Kisumu County">Kisumu County</option>
+                        <option value="Kisii County">Kisii County</option>
+                        <option value="Mombasa County">Mombasa County</option>
+                    </select>
+                    <label for="package">Package:</label>
+                    <select name="package" id="packages" class="mr-2 font-weight-bold">
+                        <option value="Birth Prep">Birth Prep</option>
+                        <option value="Postpartum care">Postpartum care</option>
+                        <option value="Breastfeeding Support">Breastfeeding Support</option>
+                        <option value="Complimentary Feeding">Complimentary Feeding</option>
+                        <option value="Virtual session">Virtual session</option>
+                    </select>
+                    <button type="submit" class="submit-btn">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="qualities" class="mt-5 mb-3">
+        <div class="container-fluid">
+            <!-- <div class="card-group">
+            <div class="card">
+              <img class="card-img-top" src="./images/vector-1.png" alt="Tunza Mama Perinatal caregivers">
+              <div class="card-body">
+                <h5 class="card-title">Perinatal Caregivers</h5>
+                <p class="card-text">Tunza Mama caregivers are trained in MCH.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./images/vector-2.png" alt="NCK-licensed">
+              <div class="card-body">
+                <h5 class="card-title">NCK-licensed</h5>
+                <p class="card-text">Tunza Mama caregivers are licensed by NCK</p>
+              </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid" src="./images/vector-3.png" alt="ISOMUM initiative">
+                <div class="card-body">
+                  <h5 class="card-title">ISOMUM initiative</h5>
+                  <p class="card-text">Tunza Mama is an ISOMUM initiative under AMREF-Kenya</p>
+                </div>
+              </div>
+            <div class="card">
+              <img class="card-img-top img-fluid" src="./images/vector-4.png" alt="covid-preparedness">
+              <div class="card-body">
+                <h5 class="card-title">COVID preparedness</h5>
+                <p class="card-text">Tunza Mama caregivers are fully vaccinated and PPE-equipped.</p>
+              </div>
+            </div>
+          </div> -->
+
+            <!-- --Using Bootstrap columns but can't get the images to size up properly-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="col-text">
+                        <i class="fas fa-user-nurse fa-7x"></i>
+                        <h5 class="card-title mt-2">Perinatal Caregivers</h5>
+                        <p class="card-text">Tunza Mama caregivers are trained in MCH for quality care in the first 1000
+                            Days
+                            of Life.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-text">
+                        <i class="far fa-id-badge fa-7x"></i>
+                        <h5 class="card-title mt-2">NCK-licensed</h5>
+                        <p class="card-text">Our caregivers are NCK-licensed, offering personalized care under a
+                            networked
+                            franchise.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-text">
+                        <i class="fas fa-baby fa-7x"></i>
+                        <h5 class="card-title mt-2">ISOMUM initiative</h5>
+                        <p class="card-text">Tunza Mama is an ISOMUM initiative under AMREF-Kenya</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-text">
+                        <i class="fas fa-head-side-mask fa-7x"></i>
+                        <h5 class="card-title mt-2">COVID preparedness</h5>
+                        <p class="card-text"> Our caregivers are fully vaccinated and PPE-equipped.</p>
+                    </div>
+                </div>
+            </div>
+        </div>-
+    </section>
+
+    <!--This highlights the organization's specialties, will be creating multiple different containers to house the indicators as well as the cards. using columns and adding carousel details. The carousel wasn't working because of 2 things: i hadn't linked the JS file well and secondly, both body tags were at the bottom of the html document and JS wouldn't run. I am proud of myself though, that I checked the console because it kept giving an error for the JS file-->
+
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="mb-3 font-weight-bold specialty-title">Personalized Packages</h3>
+                </div>
+                <div class="col-6 text-right">
+                    <a class="btn btn-secondary mb-3 mr-1" href="#carouselExampleControls" role="button"
+                        data-slide="prev">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                    <a class="btn btn-secondary mb-3 " href="#carouselExampleControls" role="button" data-slide="next">
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div id="#carouselExampleControls" class="carousel-slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card my-specialty">
+                                            <img class="img-fluid specialty-img" alt="Birth preparation package"
+                                                src="./images/specialty-1.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Birth Preparation Package</h4>
+                                                <p class="card-text">The birth preparation classes emlighten you and
+                                                    prepare
+                                                    you to be in charge during your birth experience.</p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card my-specialty">
+                                            <img class="img-fluid specialty-img" alt="Baby Care"
+                                                src="./images/specialty-2.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Baby Care</h4>
+                                                <p class="card-text">A caregiver visits 48-hours after discharge from a
+                                                    health facility to help ensure that your baby is latching well
+                                                    during
+                                                    breastfeeding. </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card my-specialty">
+                                            <img class="img-fluid specialty-img" alt="Postpartum Care"
+                                                src="./images/specialty-3.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Postpartum Care</h4>
+                                                <p class="card-text">We offer the recovering mother and new born care
+                                                    and
+                                                    support that is tailored to their specific needs.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card my-specialty">
+                                            <img class="img-fluid specialty-img" alt="Mental health assessment"
+                                                src="./images/specialty-4.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Mental health assessment</h4>
+                                                <p class="card-text">To deal with or avert stress-related problems
+                                                    during or
+                                                    after delivery, we conduct a mental health assessment of the mother
+                                                    after birth and make referrals for severe cases.</p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card my-specialty">
+                                            <img class="img-fluid specialty-img" alt="Breastfeeding support"
+                                                src="./images/specialty-5.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Breastfeeding support</h4>
+                                                <p class="card-text">Babies will seek the breast when they get
+                                                    skin-to-skin contact with their mother which we encourage during Kangaroo Mother Care.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card my-specialty">
+                                            <img class="img-fluid specialty-img" alt="Complimentary Feeding Support"
+                                                src="./images/specialty-6.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Complimentary Feeding Support</h4>
+                                                <p class="card-text">Our
+                                                    caregivers train mothers on ideal meal prep, appropriate nutrition
+                                                    and
+                                                    portion sizes as the baby grows.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Bootstrap JS, Popper before body -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--Own-->
+
+    <script src="JS/scripts.js"></script>
+</body>
+
+</html>
