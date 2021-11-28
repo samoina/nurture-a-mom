@@ -134,6 +134,10 @@ select, input {
     font: large;
 }
 
+#btn-video {
+    width: 100%;
+}
+
 
 
 
@@ -196,6 +200,8 @@ select, input {
         align-items: center;
         margin-bottom: 40px;
     }
+
+    
 
 
 

@@ -162,11 +162,11 @@
 
     <!--This highlights the organization's specialties, will be creating multiple different containers to house the indicators as well as the cards. using columns and adding carousel details. The carousel wasn't working because of 2 things: i hadn't linked the JS file well and secondly, both body tags were at the bottom of the html document and JS wouldn't run. I am proud of myself though, that I checked the console because it kept giving an error for the JS file-->
 
-    <section class="pt-5 pb-5">
+    <section class="pt-2 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <h3 class="mb-3 font-weight-bold specialty-title">Personalized Packages</h3>
+                    <h3 class="mb-2 font-weight-bold specialty-title">Personalized Packages</h3>
                 </div>
                 <div class="col-6 text-right">
                     <a class="btn btn-secondary mb-3 mr-1" href="#carouselExampleControls" role="button"
@@ -253,7 +253,8 @@
                                             <div class="card-body">
                                                 <h4 class="card-title">Breastfeeding support</h4>
                                                 <p class="card-text">Babies will seek the breast when they get
-                                                    skin-to-skin contact with their mother which we encourage during Kangaroo Mother Care.</p>
+                                                    skin-to-skin contact with their mother which we encourage during
+                                                    Kangaroo Mother Care.</p>
 
                                             </div>
                                         </div>
@@ -282,6 +283,25 @@
             </div>
         </div>
     </section>
+
+    <!--This section highlights one of the key videos that highlight the organization's work. tried copying the link directly into the iframe, but when the src includes 'watch' it doesn't work. So i needed to add 'embed' and then include the specific ID of the video. it works now.-->
+    <section id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/McvYqz4nfoo?autoplay=1&mute=1">
+                    </iframe>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h3>Having a baby? We provide personalized care for you and your baby.</h3>
+                    <p>An experienced caregiver will guide you through it all, from the comfort of your home or office. From prenatal to birth & delivery and postpartum care, we nurture the mom for safer outcomes.</p>
+                    <button type="submit" class="submit-btn font-weight-bold" id="btn-video">Click here to begin your sessions today</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
 
 
