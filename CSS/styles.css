@@ -138,6 +138,32 @@ select, input {
     width: 100%;
 }
 
+#mwisho {
+    background-color: rgb(82, 78, 78);
+    color: #ffffff;
+}
+
+#footer-socials ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-socials ul li a {
+    color: #ffffff;
+}
+
+#btn-footer {
+    width: 50%;
+}
+
+.footer-copy {
+    background: rgba(248, 238, 248, 0.2);
+}
+
+
+
+
 
 
 
@@ -201,7 +227,7 @@ select, input {
         margin-bottom: 40px;
     }
 
-    
+   
 
 
 
