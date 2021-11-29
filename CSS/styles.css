@@ -33,7 +33,8 @@ header #logo img {
 
 #ham-items a,
 #socials ul li a,
-.display-col {
+.display-col a,
+.display-col .fas {
     color: var(--primary-color);
 }
 
