@@ -227,6 +227,18 @@ select, input {
         margin-bottom: 40px;
     }
 
+    .video-text p{
+        display: none;
+    }
+
+    #btn-video {
+      margin-bottom: 30px;
+    }
+
+    #btn-footer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
    
 
 
