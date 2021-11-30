@@ -203,6 +203,14 @@ select, input {
     width: 50%;
 }
 
+#team {
+    background: #ffffff;
+}
+
+#team h1 {
+    color: var(--primary-color);
+}
+
 
 
 
