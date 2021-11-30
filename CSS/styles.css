@@ -154,6 +154,10 @@ select, input {
     color: #ffffff;
 }
 
+#footer-socials ul li a:hover {
+    color: var(--primary-color);
+}
+
 #btn-footer {
     width: 50%;
 }
@@ -161,6 +165,46 @@ select, input {
 .footer-copy {
     background: rgba(248, 238, 248, 0.2);
 }
+
+.footer-copy .fa-heart,
+.footer-copy p a,
+#centered p a {
+    color: var(--primary-color);
+}
+
+/*Style CSS for the About page*/
+/*To overlay the text onto the image, target the container holding the image and text*/
+#showcase-img {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 120vh;
+}
+
+/* Centered text in image*/
+#centered {
+    color:var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.fa-phone {
+    border: 2px solid red;
+} 
+
+#btn-showcase {
+    width: 50%;
+}
+
+
+
 
 
 
