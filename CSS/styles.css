@@ -212,6 +212,11 @@ select, input {
     background: #ffffff;
 }
 
+.purple {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
 /*Styles for the Services page*/
 #reviews {
     display: flex;
@@ -318,20 +323,55 @@ select, input {
     color: wheat;
 }
 
+.review-box:hover {
+    transform:translateY(-10px);
+    transition: all ease 0.3s;
+}
 
-
-
-
-
-
-
-
-
+/*Style the blog page*/
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
 
 /*Media Queries*/
 
 @media screen and (max-width:768px) {
-    /*(A) BREAK INTO A VERTICAL MENU. Thois transforms the horizaontal menu into a vertical one */
+    /*(A) BREAK INTO A VERTICAL MENU. This transforms the horizaontal menu into a vertical one */
     #ham-items a {
         display: block;
         width: 100%;
